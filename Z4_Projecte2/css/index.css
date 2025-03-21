@@ -1,0 +1,917 @@
+/*index.html*/
+/*header*/
+
+
+.navbar {
+  display: flex; /* Usa flexbox para organizar elementos */
+  justify-content: space-between; /* Distribuye espacio entre elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.logo {
+  margin-left: 20px; /* Añade margen al lado izquierdo del logo */
+}
+
+.logo-img {
+  height: 50px; /* Establece la altura de la imagen del logo */
+}
+
+.navbar-list {
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Usa flexbox para organizar elementos */
+  margin-right: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+.navbar-item {
+  position: relative; /* Establece posicionamiento relativo para los submenús */
+}
+
+.navbar-link {
+  color: #ffffff; /* Color del texto de los enlaces */
+  text-decoration: none; /* Elimina subrayado de los enlaces */
+  padding: 10px 20px; /* Añade espacio interno a los enlaces */
+  display: block; /* Hace que los enlaces ocupen todo el espacio */
+}
+
+.navbar-item:hover .navbar-link {
+  background-color: #444; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.dropdown {
+  display: none; /* Oculta inicialmente el menú desplegable */
+  position: absolute; /* Posicionamiento absoluto */
+  background-color: #444; /* Color de fondo del menú */
+  top: 100%; /* Posiciona el menú justo debajo del elemento padre */
+  left: 0;
+  min-width: 200px; /* Ancho mínimo del menú */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+.dropdown li {
+  width: 100%; /* Hace que los elementos ocupen todo el ancho */
+}
+
+.dropdown li a {
+  padding: 10px 20px; /* Espacio interno de los elementos del menú */
+  display: block; /* Hace que los enlaces ocupen todo el espacio */
+  color: #fff; /* Color del texto */
+}
+
+.dropdown li a:hover {
+  background-color: #5f5f5f; /* Color al pasar el ratón */
+}
+
+.navbar-item:hover .dropdown {
+  display: block; /* Muestra el menú al pasar el ratón */
+}
+
+.login .navbar-link {
+  background-color: #3a3a3a; /* Color de fondo del enlace de login */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+.login .navbar-link:hover {
+  background-color: #525252; /* Color al pasar el ratón */
+}
+/* se acaba header */ 
+
+
+
+
+
+
+
+/* cuerpo */
+* {
+  box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total */
+}
+
+html {
+  scroll-behavior: smooth; /* Desplazamiento suave entre secciones */
+}
+
+.containerfotoindex {
+  text-align: center; /* Centra el contenido */
+  margin-top: 50px; /* Añade margen superior */
+}
+/* cuerpo final */
+
+
+
+
+
+
+
+/* Estilos generales */
+body {
+  box-sizing: border-box; /* Incluye padding y borde en dimensiones */
+  color: #333; /* Color de texto predeterminado */
+  box-sizing: border-box; /* Incluye padding y borde en dimensiones */
+  background-color: #f4f4f9; /* Color de fondo */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  height: 100vh; /* Altura completa de la ventana */
+  background-color: #f4f4f9;
+  font-family: 'Roboto', sans-serif; /* Fuente para el cuerpo */
+  font-family: Arial, sans-serif; /* Establece la fuente para todo el documento */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+}
+
+header {
+  background-color: #000000; /* Fondo negro para header */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  padding: 10px 0; /* Añade relleno vertical al encabezado */
+
+}
+
+header nav ul {
+  list-style: none; /* Elimina puntos de lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Organización flexible */
+  justify-content: center;
+  flex-wrap: wrap; /* Permite envoltura en pantallas pequeñas */ /*distribuyan en múltiples líneas cuando 
+  no caben en una sola línea. */
+}
+
+header nav ul li {
+  margin: 0 1rem; /* Espaciado horizontal */
+}
+
+header nav ul li a {
+  color: rgb(255, 255, 255); /* Color blanco para enlaces */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline; /* Subrayado al pasar ratón */
+}
+
+main {
+  padding: 2rem; /* Relleno interno */
+}
+
+.contenedor-apartados {
+  display: flex; /* Contenedor flexible */
+  justify-content: space-between; /* Distribuye espacio entre elementos */
+  gap: 1rem; /* Espacio entre elementos */
+  flex-wrap: wrap; /* Permite envoltura */
+}
+
+.apartado {
+  background-color: white; /* Fondo blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 1.5rem;
+  flex: 1; /* Crecimiento flexible */
+  min-width: 300px; /* Ancho mínimo */
+  max-width: 32%; /* Ancho máximo */
+  display: flex;
+  flex-direction: column; /* Organización vertical */
+  align-items: center; /* Centrado horizontal */
+  text-align: center; /* Texto centrado */
+}
+
+.apartado img {
+  max-width: 100px; /* Ancho máximo de imagen */
+  height: auto; /* Altura proporcional */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-bottom: 1rem; /* Margen inferior */
+}
+
+.apartado h2 {
+  color: #000000; /* Color de título */
+  margin-bottom: 0.5rem; /* Margen inferior */
+}
+
+.apartado p {
+  margin: 0; /* Sin márgenes */
+}
+
+footer {
+  background-color: #333; /* Fondo oscuro */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: absolute; /* Posicionamiento absoluto */
+  width: 100%;
+  bottom: 0; /* Pegado al fondo */
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+  background-color: #000000; /* Fondo negro */
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-logo img {
+  width: 250px; /* Ancho del logo */
+  height: auto; /* Altura proporcional */
+  margin-bottom: 1rem; /* Margen inferior */
+}
+
+.footer-info {
+  margin-bottom: 1rem; /* Margen inferior */
+}
+
+.footer-info p {
+  margin: 0.5rem 0; /* Margen vertical */
+}
+
+.footer-info a {
+  color: #5456ff; /* Color de enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.footer-info a:hover {
+  text-decoration: underline; /* Subrayado al pasar ratón */
+}
+
+.footer-social a {
+  display: inline-block; /* Elemento en línea con bloque */
+  margin: 0 0.5rem; /* Margen horizontal */
+}
+
+.footer-social img {
+  width: 30px; /* Ancho de íconos sociales */
+  height: auto; /* Altura proporcional */
+}
+
+.footer-social a img:hover {
+  opacity: 0.7; /* Reducción de opacidad al pasar ratón */
+}
+
+.boton-animado-derecha:hover {
+  box-shadow: inset 400px 0 0 0 #000000; /* Animación de sombra al pasar ratón */
+}
+
+.dashboard {
+  text-align: left;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 2em;
+  margin: 0;
+  color: #333;
+}
+
+.image {
+  width: 900px;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-logo img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-info {
+  margin-bottom: 1rem;
+}
+
+.footer-info p {
+  margin: 0.5rem 0;
+}
+
+.footer-info a {
+  color: #5456ff;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.footer-social img {
+  width: 30px;
+  height: auto;
+}
+
+.footer-social a img:hover {
+  opacity: 0.7;
+}
+
+.boton-animado-derecha:hover {
+  box-shadow: inset 400px 0 0 0 #D80286;
+}
+
+.dashboard {
+  text-align: left;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 2em;
+  margin: 0;
+  color: #333;
+}
+/* footer */
+
+/*sobrenosotros.css*/
+/*header*/
+
+
+
+
+
+
+
+
+
+/*se acaba el boton header*/  
+
+/*texto a la izquierda y foto a la derecha*/
+div.noticia {
+  width: 90%;
+  margin: 20px auto;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 15px;
+}
+
+div.noticia img.derecha {
+  float: right;
+  margin-left: 15px;
+}
+
+div.reset {
+  clear: both; /*La propiedad CSS clear especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos. La propiedad clear aplica a ambos elementos flotantes y no flotantes.*/
+}
+/*texto a la izquierda y foto a la derecha*/
+
+
+
+
+
+/*texto a la derecha y foto a la izquierda*/
+
+div.noticia2 {
+  width: 90%;
+  margin: 20px auto;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 15px;
+}
+
+div.noticia2 img.izquierda {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+div.reset {
+  clear: both; /*los elementos flotantes no pueden flotar en ambos lados*/ /*Que esten a la par*/
+}
+/*texto a la derecha y foto a la izquierda fin*/
+
+
+
+
+
+
+
+/*Frase Apartado1*/
+.frasecontainer1 {
+  text-align: center;
+}
+/*Fin frase apartado1*/
+
+/*Tres apartados(1)*/
+.contenedor-apartados {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap; /* Añadido para responsividad */
+}
+
+.apartado {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.apartado img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.apartado h2 {
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.apartado p {
+  margin: 0;
+}
+/*Tres apartados(1) fin*/
+
+/*Frase Apartado2*/
+.frasecontainer2 {
+  text-align: center;
+}
+/*Fin frase apartado2*/
+
+/*Tres apartados (2)*/
+.contenedor-apartados2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap; /* Añadido para responsividad */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.apartado {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.apartado img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.apartado h2 {
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.apartado p {
+  margin: 0;
+}
+/*Tres apartados(2) fin*/
+
+.container {
+  text-align: left;
+  margin-left: 100px;
+}
+
+
+
+
+/* Botón Subir */
+.toTop {
+  border: none; /* Sin borde */
+  display: flex; /* Contenedor flexible */
+  cursor: pointer; /* Cursor de puntero */
+  transition: opacity 0.3s, transform 0.3s; /* Transición suave */
+  position: fixed; /* Posicionamiento fijo */
+  right: 1rem; /* Distancia desde la derecha */
+  bottom: 1rem; /* Distancia desde abajo */
+  z-index: 9999; /* Capa superior */
+}
+
+.toTop:not(.is-visible) {
+  pointer-events: none; /* Sin eventos de ratón */
+  opacity: 0; /* Transparente */
+  transform: translateY(-2rem); /* Desplazamiento vertical */
+}
+
+.toTop svg {
+  stroke-width: 3px; /* Grosor del trazo */
+  stroke: currentColor; /* Color de trazo actual */
+  fill: none; /* Sin relleno */
+  width: 20px; /* Ancho */
+}
+
+.toTop {
+  background-color: #252525; /* Color de fondo */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Sombra */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  padding: 0.75rem; /* Relleno */
+  color: #fff; /* Color de texto */
+}
+
+
+
+
+
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar-list {
+    flex-direction: column; /* Cambio a columna */
+    align-items: center; /* Centrado */
+  }
+
+  .contenedor-apartados,
+  .contenedor-apartados2,
+  .contenedor-apartados3,
+  .contenedor-apartados4 {
+    flex-direction: column; /* Cambio a columna */
+    align-items: center; /* Centrado */
+  }
+
+  .apartado {
+    max-width: 90%; /* Ancho máximo */
+  }
+
+  .container3fotos {
+    flex-direction: column; /* Cambio a columna */
+    align-items: center; /* Centrado */
+  }
+
+  .foto {
+    width: 80%; /* Ancho */
+    margin: 10px 0; /* Margen vertical */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Apartados de servicios*/
+.contenedor-apartados4 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem; /*Es el ancho del canalón que separa las lineas de las rejillas*/
+  flex-wrap: wrap; /* Añadido para responsividad */
+}
+
+.apartado {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.apartado img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.apartado h2 {
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.apartado p {
+  margin: 0;
+}
+/*Apartados de servicios fin*/
+
+
+
+
+
+
+
+
+
+/*flota e instalaciones.css*/
+.textoflota {
+  text-align: center;
+}
+
+/*tres fotos horizontal*/
+.container3fotos {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+
+.foto {
+  width: 30%;
+  margin: 0 10px;
+  object-fit: cover; /*La propiedad CSS establece cómo debe redimensionarse el contenido de un elemento reemplazado , como un o , para ajustarse a su contenedor.*/
+}
+
+
+
+
+
+/* Media Queries para tres fotos */
+@media (max-width: 768px) {
+  .container3fotos {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    align-items: center; /* Centrar contenido */
+  }
+
+  .foto {
+    width: 80%; /* Ajustar el ancho de las fotos en pantallas pequeñas */
+    margin: 10px 0; /* Margen vertical en lugar de horizontal */
+  }
+}
+/*tres fotos fin*/
+
+
+
+
+
+
+
+
+
+/*contactanos*/
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /*La propiedad CSS establece la altura mínima de un elemento. Evita que el valor utilizado de la propiedad sea menor que el valor especificado para .*/
+  background-color: #fff;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*/*La propiedad CSS box-shadow añade efectos de sombra alrededor del marco de un elemento.*/
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.buttoncon {
+  width: 100%;
+  padding: 10px;
+  background-color: #666666;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #575757;
+}
+
+/*contactanos fin*/
+
+
+
+
+
+
+/*Compañia*/
+.containercompa {
+  text-align: center;
+}
+
+.fotolarga {
+width: 100px;
+height: 100px;
+justify-items: center;}
+/*Fin Compañia*/
+
+
+
+
+
+
+
+
+/*Registrarse*/
+.buttonregi {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #1d1d1d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4b4b4b;
+}
+/*Registrarse fin*/
+
+
+
+
+
+
+
+
+/*Comprar servicio*/
+.buy-button {
+  background-color: #686868;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  margin-bottom: 50px;
+}
+
+.buy-button:hover {
+  background-color: #797979;
+}
+/*Comprar servicio fin*/
+
+
+
+
+
+
+
+
+
+
+
+/*Framework columnas*/
+/*Frase Apartado1*/
+.col {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+/*Fin frase apartado1*/
+
+/*Tres apartados(1)*/
+.containertext-center {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;/*Es el ancho del canal que separa las columnas de la grilla.*/
+  flex-wrap: wrap; /* Añadido para responsividad */
+}
+
+.col {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.col h2 {
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.col p {
+  margin: 0;
+  margin-top: 25px;
+}
+/*Tres apartados(1) fin*/
+/*fin Framework columnas*/
+
+
+
+
+
+
+
+
+/*Framework contactos*/
+.card-img-top{
+  width: 100px;
+  margin-bottom: 15px;
+}
+/*Fin framework contactos*/

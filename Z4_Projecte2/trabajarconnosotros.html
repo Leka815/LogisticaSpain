@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>LogisticaSpain</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="imagenes/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagenes/logofooter.png" alt="Logo" class="logo-img">
+            </div>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Inicio</a>
+                    <ul class="dropdown">
+                        <li><a href="blog.html">Blog(Actualidad)</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="sobrenosotros.html" class="navbar-link">Sobre Nosotros</a>
+                    <ul class="dropdown">
+                        <li><a href="trabajarconnosotros.html">Trabajar con nosotros</a></li>
+                        <li><a href="compañia.html">Compañia</a></li>
+                        <li><a href="enlacesdeinteres.html">Enlaces de interes</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="servicios.html" class="navbar-link">Servicios</a>
+                    <ul class="dropdown">
+                        <li><a href="flotaeinstalaciones.html">Flota e Instalaciones</a></li>
+                        <li><a href="sectoresenlosquetrabajamos.html">Sectores en los que trabajamos</a></li>
+                        <li><a href="comprarservicio.html">Comprar servicio</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="contactanos.html" class="navbar-link">Contáctanos</a>
+                </li>
+                <li class="navbar-item login">
+                    <a href="registrarse.html" class="navbar-link">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="noticia2">
+      <img class="izquierda" src="imagenes/Trabajarnosotros1.png">
+      <h1>1. Experiencia y Especialización en Diversos Sectores</h1>
+      <aside>Con un par de años de experiencia en la industria logística, tenemos un profundo conocimiento de los desafíos específicos que enfrentan los sectores más variados. Desde retail y moda hasta tecnología, energía y salud, nuestras soluciones están diseñadas para adaptarse a las necesidades únicas de tu negocio, asegurando un manejo eficiente y seguro de tus productos.</aside>
+      <div class="reset"></div>
+    </div>
+</div>
+
+<div class="noticia2">
+  <img class="izquierda" src="imagenes/Trabajarnosotros2.png">
+  <h1>2. Tecnología de Vanguardia para la Gestión de la Cadena de Suministro</h1>
+  <aside>Nos apoyamos en las últimas tecnologías para optimizar cada etapa de la logística, desde el control de inventarios hasta el seguimiento de entregas. Gracias a nuestras herramientas avanzadas de gestión de flotas, monitoreo en tiempo real y análisis predictivo, garantizamos que cada envío llegue a tiempo y de forma eficiente, mejorando la visibilidad y el control para nuestros clientes.</aside>
+  <div class="reset"></div>
+</div>
+</div>
+
+<div class="noticia2">
+  <img class="izquierda" src="imagenes/Trabajarnosotros3.png">
+  <h1>3. Flexibilidad y Adaptabilidad</h1>
+  <aside>Entendemos que cada negocio tiene sus propias necesidades logísticas. Es por eso que ofrecemos soluciones personalizadas para ajustarnos a las demandas cambiantes de tu empresa. Ya sea que necesites entregas urgentes y almacenamiento especializado, nuestra flexibilidad asegura que podemos adaptarnos a tus requisitos específicos, incluso en situaciones de alta presión.</aside>
+  <div class="reset"></div>
+</div>
+</div>
+
+<div class="noticia2">
+  <img class="izquierda" src="imagenes/Trabajarnosotros4.png">
+  <h1>4. Compromiso con la Sostenibilidad y Eficiencia</h1>
+  <aside>Nos esforzamos por hacer una diferencia positiva no solo en la logística de tu empresa, sino también en el medio ambiente. Implementamos prácticas sostenibles, como transporte eficiente y gestión de residuos, para reducir la huella de carbono y contribuir al bienestar del planeta. Trabajar con nosotros significa no solo mejorar la eficiencia de tu negocio, sino también hacerlo de manera responsable.</aside>
+  <div class="reset"></div>
+</div>
+</div>
+
+
+<button class="toTop" id="toTop">     <!-- Crea un botón con la clase y ID "toTop" -->
+  <svg viewBox="0 0 24 24">         <!-- Crea un ícono SVG dentro del botón -->
+    <path d="m4 16 8-8 8 8"></path> <!-- Dibuja un camino que crea un ícono de flecha hacia arriba (un chevron) -->
+  </svg>
+</button>
+
+<script>
+const toTop = (() => {         // Esta es una Expresión de Función Inmediatamente Invocada (IIFE) que configura la funcionalidad de un botón "ir arriba"
+  let button = document.getElementById("toTop")     // Selecciona el elemento del botón con el ID "toTop"
+  window.onscroll = () => {         // Agrega un detector de eventos para el desplazamiento en la ventana
+    button.classList[
+        (document.documentElement.scrollTop > 100) ? "add" : "remove"
+      ]("is-visible")
+  // Agrega o elimina la clase "is-visible" según la posición del desplazamiento
+  // Si la página se desplaza más de 100 píxeles, se agrega la clase "is-visible"
+  // De lo contrario, se elimina la clase
+  }
+  button.onclick = () => {
+  // Agrega un detector de eventos de clic al botón
+    window.scrollTo({
+      top:0, behavior:"smooth"
+    })
+  // Cuando se hace clic, desplaza suavemente la página hasta la parte superior
+  }
+})()
+</script>
+    
+    <footer>
+      <div class="footer-logo">
+          <img src="imagenes/logofooter.png" alt="Logo">
+      </div>
+      <div class="footer-info">
+          <p>Email: <a href="mailto:info@LogisticaSpain.es">info@LogisticaSpain.es</a></p>
+          <p>Teléfono: +34 684 06 60 80</p>
+          <p>Dirección: Carrer Filadores Num.15, Olesa de Monserrat, España</p>
+      </div>
+      <div class="footer-social">
+          <a href="https://www.instagram.com/logisticaspain/" target="_blank">
+              <img src="imagenes/Instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/in/tuusuario" target="_blank">
+              <img src="imagenes/LInkedin.png" alt="LinkedIn">
+          </a>
+      </div>
+    </footer>
+    
+    </body>
+    </html>

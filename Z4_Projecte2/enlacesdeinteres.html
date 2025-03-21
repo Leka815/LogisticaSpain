@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>LogisticaSpain</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="imagenes/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagenes/logofooter.png" alt="Logo" class="logo-img">
+            </div>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Inicio</a>
+                    <ul class="dropdown">
+                        <li><a href="blog.html">Blog(Actualidad)</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="sobrenosotros.html" class="navbar-link">Sobre Nosotros</a>
+                    <ul class="dropdown">
+                        <li><a href="trabajarconnosotros.html">Trabajar con nosotros</a></li>
+                        <li><a href="compañia.html">Compañia</a></li>
+                        <li><a href="enlacesdeinteres.html">Enlaces de interes</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="servicios.html" class="navbar-link">Servicios</a>
+                    <ul class="dropdown">
+                        <li><a href="flotaeinstalaciones.html">Flota e Instalaciones</a></li>
+                        <li><a href="sectoresenlosquetrabajamos.html">Sectores en los que trabajamos</a></li>
+                        <li><a href="comprarservicio.html">Comprar servicio</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="contactanos.html" class="navbar-link">Contáctanos</a>
+                </li>
+                <li class="navbar-item login">
+                    <a href="registrarse.html" class="navbar-link">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="noticia2">
+        <img class="izquierda" src="imagenes/Enlacesdeinteres3.png">
+        <h1>I. Leyes política de privacidad</h1>
+        <aside>Leyes que incorpora esta política de privacidad
+            Esta política de privacidad está adaptada a la normativa española y europea vigente en materia de protección de datos personales en internet. En concreto, la misma respeta las siguientes normas:
+            El Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos (RGPD).
+            La Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPD-GDD).
+            El Real Decreto 1720/2007, de 21 de diciembre, por el que se aprueba el Reglamento de desarrollo de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal (RDLOPD).
+            La Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE).</aside>
+        <div class="reset"></div>
+      </div>
+      </div>
+
+      <div class="noticia">
+        <img class="derecha" src="imagenes/Enlacesdeinteres1.png">
+        <h1>II. TÉRMINOS Y CONDICIONES GENERALES DE USO</h1>
+        <aside>El objeto de las condiciones: El Sitio Web
+            El objeto de las presentes Condiciones Generales de Uso (en adelante, Condiciones) es regular el acceso y la utilización del Sitio Web. A los efectos de las presentes Condiciones se entenderá como Sitio Web: la apariencia externa de los interfaces de pantalla, tanto de forma estática como de forma dinámica, es decir, el árbol de navegación; y todos los elementos integrados tanto en los interfaces de pantalla como en el árbol de navegación (en adelante, Contenidos) y todos aquellos servicios o recursos en línea que en su caso ofrezca a los Usuarios (en adelante, Servicios).</aside>
+        <div class="reset"></div>
+      </div>   
+    </div>
+
+    <div class="noticia2">
+        <img class="izquierda" src="imagenes/Enlacesdeinteres2.png">
+        <h1>III.ACCESO Y NAVEGACIÓN EN EL SITIO WEB: EXCLUSIÓN DE GARANTÍAS Y RESPONSABILIDAD</h1>
+        <aside>LogisticaSpain no garantiza la continuidad, disponibilidad y utilidad del Sitio Web, ni de los Contenidos o Servicios. LogisticaSpain hará todo lo posible por el buen funcionamiento del Sitio Web, sin embargo, no se responsabiliza ni garantiza que el acceso a este Sitio Web no vaya a ser ininterrumpido o que esté libre de error.
+            Tampoco se responsabiliza o garantiza que el contenido o software al que pueda accederse a través de este Sitio Web, esté libre de error o cause un daño al sistema informático (software y hardware) del Usuario. En ningún caso LogísticaSpain será responsable por las pérdidas, daños o perjuicios de cualquier tipo que surjan por el acceso, navegación y el uso del Sitio Web, incluyéndose, pero no limitándose, a los ocasionados a los sistemas informáticos o los provocados por la introducción de virus.</aside>
+        <div class="reset"></div>
+      </div>
+      </div>
+
+      <button class="toTop" id="toTop">     <!-- Crea un botón con la clase y ID "toTop" -->
+        <svg viewBox="0 0 24 24">         <!-- Crea un ícono SVG dentro del botón -->
+          <path d="m4 16 8-8 8 8"></path> <!-- Dibuja un camino que crea un ícono de flecha hacia arriba (un chevron) -->
+        </svg>
+    </button>
+    
+    <script>
+      const toTop = (() => {         // Esta es una Expresión de Función Inmediatamente Invocada (IIFE) que configura la funcionalidad de un botón "ir arriba"
+        let button = document.getElementById("toTop")     // Selecciona el elemento del botón con el ID "toTop"
+        window.onscroll = () => {         // Agrega un detector de eventos para el desplazamiento en la ventana
+          button.classList[
+              (document.documentElement.scrollTop > 100) ? "add" : "remove"
+            ]("is-visible")
+        // Agrega o elimina la clase "is-visible" según la posición del desplazamiento
+        // Si la página se desplaza más de 100 píxeles, se agrega la clase "is-visible"
+        // De lo contrario, se elimina la clase
+        }
+        button.onclick = () => {
+        // Agrega un detector de eventos de clic al botón
+          window.scrollTo({
+            top:0, behavior:"smooth"
+          })
+        // Cuando se hace clic, desplaza suavemente la página hasta la parte superior
+        }
+      })()
+    </script>
+
+<footer>
+    <div class="footer-logo">
+        <img src="imagenes/logofooter.png" alt="Logo">
+    </div>
+    <div class="footer-info">
+        <p>Email: <a href="mailto:info@LogisticaSpain.es">info@LogisticaSpain.es</a></p>
+        <p>Teléfono: +34 684 06 60 80</p>
+        <p>Dirección: Carrer Filadores Num.15, Olesa de Monserrat, España</p>
+    </div>
+    <div class="footer-social">
+        <a href="https://www.instagram.com/logisticaspain/" target="_blank">
+            <img src="imagenes/Instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/tuusuario" target="_blank">
+            <img src="imagenes/LInkedin.png" alt="LinkedIn">
+        </a>
+    </div>
+  </footer>
+  
+  </body>
+  </html>

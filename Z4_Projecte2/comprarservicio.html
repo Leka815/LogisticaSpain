@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>LogisticaSpain</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="imagenes/logo.ico" srcset="index.html" type="image/x-icon">
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagenes/logofooter.png" alt="Logo" class="logo-img">
+            </div>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Inicio</a>
+                    <ul class="dropdown">
+                        <li><a href="blog.html">Blog(Actualidad)</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="sobrenosotros.html" class="navbar-link">Sobre Nosotros</a>
+                    <ul class="dropdown">
+                        <li><a href="trabajarconnosotros.html">Trabajar con nosotros</a></li>
+                        <li><a href="compañia.html">Compañia</a></li>
+                        <li><a href="enlacesdeinteres.html">Enlaces de interes</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="servicios.html" class="navbar-link">Servicios</a>
+                    <ul class="dropdown">
+                        <li><a href="flotaeinstalaciones.html">Flota e Instalaciones</a></li>
+                        <li><a href="sectoresenlosquetrabajamos.html">Sectores en los que trabajamos</a></li>
+                        <li><a href="comprarservicio.html">Comprar servicio</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="contactanos.html" class="navbar-link">Contáctanos</a>
+                </li>
+                <li class="navbar-item login">
+                    <a href="registrarse.html" class="navbar-link">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="container">
+    <div class="services-grid">
+        <div class="service-card">
+            <h2 class="service-title">Plan Básico</h2>
+            <p class="service-description">Perfecto para comenzar con nuestros servicios.</p>
+            <ul class="features-list">
+                <li>Soporte por email</li>
+            </ul>
+            <button type="button" class="btn btn-outline-secondary">Comprar Servicio</button>
+        </div>
+        <!https://getbootstrap.com/docs/5.3/components/buttons/>
+
+        <div class="service-card">
+            <h2 class="service-title">Plan Profesional</h2>
+            <p class="service-description">Ideal para profesionales y pequeñas empresas.</p>
+            <ul class="features-list">
+                <li>Todo del plan básico</li>
+                <li>Soporte prioritario</li>
+            </ul>
+            <button type="button" class="btn btn-outline-secondary">Comprar Servicio</button>
+        </div>
+        <!https://getbootstrap.com/docs/5.3/components/buttons/>
+        <div class="servicio-carta">
+            <h2 class="servicio-titulo">Plan Premium</h2>
+            <p class="servicio-descripcion">La solución más completa para grandes empresas.</p>
+            <ul class="features-list">
+                <li>Todo del plan profesional</li>
+                <li>Soporte 24/7</li>
+                <li>Configuración personalizada</li>
+            </ul>
+            <button type="button" class="btn btn-outline-secondary">Comprar Servicio</button>
+            <!https://getbootstrap.com/docs/5.3/components/buttons/>
+        </div>
+    </div>
+</div>
+
+<button class="toTop" id="toTop">     <!-- Crea un botón con la clase y ID "toTop" -->
+    <svg viewBox="0 0 24 24">         <!-- Crea un ícono SVG dentro del botón -->
+      <path d="m4 16 8-8 8 8"></path> <!-- Dibuja un camino que crea un ícono de flecha hacia arriba (un chevron) -->
+    </svg>
+</button>
+
+<script>
+  const toTop = (() => {         // Esta es una Expresión de Función Inmediatamente Invocada (IIFE) que configura la funcionalidad de un botón "ir arriba"
+    let button = document.getElementById("toTop")     // Selecciona el elemento del botón con el ID "toTop"
+    window.onscroll = () => {         // Agrega un detector de eventos para el desplazamiento en la ventana
+      button.classList[
+          (document.documentElement.scrollTop > 100) ? "add" : "remove"
+        ]("is-visible")
+    // Agrega o elimina la clase "is-visible" según la posición del desplazamiento
+    // Si la página se desplaza más de 100 píxeles, se agrega la clase "is-visible"
+    // De lo contrario, se elimina la clase
+    }
+    button.onclick = () => {
+    // Agrega un detector de eventos de clic al botón
+      window.scrollTo({
+        top:0, behavior:"smooth"
+      })
+    // Cuando se hace clic, desplaza suavemente la página hasta la parte superior
+    }
+  })()
+</script>
+
+<footer>
+    <div class="footer-logo">
+        <img src="imagenes/logofooter.png" alt="Logo">
+    </div>
+    <div class="footer-info">
+        <p>Email: <a href="mailto:info@LogisticaSpain.es">info@LogisticaSpain.es</a></p>
+        <p>Teléfono: +34 684 06 60 80</p>
+        <p>Dirección: Carrer Filadores Num.15, Olesa de Monserrat, España</p>
+    </div>
+    <div class="footer-social">
+        <a href="https://www.instagram.com/logisticaspain/" target="_blank">
+            <img src="imagenes/Instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/tuusuario" target="_blank">
+            <img src="imagenes/LInkedin.png" alt="LinkedIn">
+        </a>
+    </div>
+  </footer>
+  
+  </body>
+  </html>
+
+  <!Como te habras dado cuenta lo unico que he cambiado aqui son los botones para hacerlos mucho mas
+  pesonalizados y con efecto al poner el puntero encima el problema es que se le quita el link
+  que tenia hacia el apartado de contactos(linia 49-83)>
